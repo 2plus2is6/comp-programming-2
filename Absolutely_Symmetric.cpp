@@ -10,11 +10,12 @@ int main() {
 
     //building the matrix
 
-    for (auto row : arr) {
-        for (auto value : row) {
-            cin >> value;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> arr[i][j];
         }
     }
+
 
     // check if atl 1 decomposition exists
     bool oneMatrix = true;
@@ -37,7 +38,9 @@ int main() {
 
         for (const auto &row : arr) {
             for (int j = 0; j < n; j++) {
-                if (j > 0) cout << ' ';
+                if (j > 0) {
+                    cout << ' ';
+                }
                 cout << row[j];
             }
             cout << '\n';
@@ -67,7 +70,9 @@ int main() {
 
     for (auto row : first) {
         for (int j = 0; j < n; j++) {
-            if (j > 0) cout << ' ';
+            if (j > 0) {
+                cout << ' ';
+            }
             cout << row[j];
         }
         cout << '\n';
@@ -75,7 +80,9 @@ int main() {
 
     for (auto row : second) {
         for (int j = 0; j < n; j++) {
-            if (j > 0) cout << ' ';
+            if (j > 0) {
+                cout << ' ';
+            }
             cout << row[j];
         }
         cout << '\n';
